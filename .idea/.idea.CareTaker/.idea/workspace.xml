@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Open Files" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/EnemyWanderState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/State.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UserInterface/ScoreLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.2/Runtime/Behaviours/Cinemachine3rdPersonAim.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Mission Impossible/Lab Shootout/LabShootout/Assets/Actors/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelEnterExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/PreDisableState.cs" />
+        <option value="$PROJECT_DIR$/Assets/FirstPersonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/PreFleeState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/PreToTargetState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/PreWanderState.cs" />
+        <option value="$PROJECT_DIR$/Assets/DestructableProp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/GlobalAndMisc/LevelEnterExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/WanderState.cs" />
+        <option value="$PROJECT_DIR$/Assets/GlobalAndMisc/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/ToTargetState.cs" />
+        <option value="$PROJECT_DIR$/Assets/GlobalAndMisc/DestructableProp.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/VictoryState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/LevelEnterExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScoreLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/DialoguePanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/IUIBroadcastable.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIBroadcastable.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharacterSelect.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/SegwayUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/FaceCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Tracked.shader" />
+        <option value="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" />
+        <option value="$PROJECT_DIR$/Assets/BrokenProp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hGvGypw79JRCUHltsot608UlFa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498452" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3003096" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../_Built games/CareTaker\CareTaker.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\User\OneDrive\_Built games\CareTaker" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="" />
+      <created>1599650161824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599650161824</updated>
+      <workItem from="1599650187423" duration="2621000" />
+      <workItem from="1599658484179" duration="4991000" />
+      <workItem from="1599671733597" duration="4472000" />
+      <workItem from="1599686024824" duration="3744000" />
+      <workItem from="1599691528012" duration="3000" />
+      <workItem from="1599733891159" duration="7963000" />
+      <workItem from="1599747001380" duration="3627000" />
+      <workItem from="1599750983490" duration="612000" />
+      <workItem from="1599761465712" duration="7599000" />
+      <workItem from="1599779898006" duration="1524000" />
+      <workItem from="1599830415947" duration="6570000" />
+      <workItem from="1599840348924" duration="7295000" />
+      <workItem from="1599860667359" duration="1987000" />
+      <workItem from="1599908519091" duration="26494000" />
+      <workItem from="1600002525373" duration="10978000" />
+      <workItem from="1600036072918" duration="1294000" />
+      <workItem from="1600078513817" duration="9595000" />
+      <workItem from="1600096082813" duration="2016000" />
+      <workItem from="1600166896758" duration="18460000" />
+      <workItem from="1600338295638" duration="6683000" />
+      <workItem from="1600379032238" duration="5016000" />
+      <workItem from="1600553424124" duration="6385000" />
+      <workItem from="1600595675169" duration="5488000" />
+      <workItem from="1600612096611" duration="1797000" />
+      <workItem from="1600620310233" duration="4241000" />
+      <workItem from="1600682519679" duration="617000" />
+      <workItem from="1600693683038" duration="7931000" />
+      <workItem from="1600718734032" duration="3155000" />
+      <workItem from="1600767719516" duration="9021000" />
+      <workItem from="1600783397994" duration="2036000" />
+      <workItem from="1600856270078" duration="9836000" />
+      <workItem from="1600893881504" duration="2962000" />
+      <workItem from="1601045369833" duration="7739000" />
+      <workItem from="1601129171539" duration="457000" />
+      <workItem from="1601289934495" duration="5231000" />
+      <workItem from="1601376520414" duration="6969000" />
+      <workItem from="1601459854401" duration="8774000" />
+      <workItem from="1601547504270" duration="4863000" />
+      <workItem from="1601635563679" duration="4859000" />
+      <workItem from="1601677972493" duration="1200000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1601639192768">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1601639192768" />
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.0.center" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.0.left" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.1.bottom" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.1.center" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.1.left" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.1.right" timestamp="1600384104347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1600384104347" />
+    <state width="1323" height="253" key="GridCell.Tab.2.bottom" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.2.center" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.2.left" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.2.right" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.3.bottom" timestamp="1600384104349">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600384104349" />
+    <state width="1323" height="253" key="GridCell.Tab.3.center" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.3.left" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state width="1323" height="253" key="GridCell.Tab.3.right" timestamp="1600384104348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="253" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1600384104348" />
+    <state x="275" y="101" key="Rider.ProjectTemplateDialog.Size" timestamp="1600382865253">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="101" key="Rider.ProjectTemplateDialog.Size/0.0.1366.738@0.0.1366.738" timestamp="1600382865253" />
+    <state x="444" y="0" key="RiderGenerateDialog" timestamp="1600719612011">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="444" y="0" key="RiderGenerateDialog/0.0.1366.738@0.0.1366.738" timestamp="1600719612011" />
+    <state x="184" y="14" key="SettingsEditor" timestamp="1599750517312">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599750517312" />
+    <state x="202" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600775397400">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="202" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1600775397400" />
+    <state x="651" y="39" width="667" height="656" key="find.popup" timestamp="1601640058488">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="651" y="39" width="667" height="656" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601640058488" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1600858995764">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600858995764" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600601422394">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600601422394" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="dist" language="C#" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

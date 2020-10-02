@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SegwayMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Bone
+    m_Weight: 0
+  - m_Path: Armature/Bone.001
+    m_Weight: 0
+  - m_Path: Armature/FootCtrl.L
+    m_Weight: 0
+  - m_Path: Armature/FootCtrl.L/HeelRoll.L
+    m_Weight: 0
+  - m_Path: Armature/FootCtrl.L/HeelRoll.L/ToeRoll.L
+    m_Weight: 0
+  - m_Path: Armature/FootCtrl.R
+    m_Weight: 0
+  - m_Path: Armature/FootCtrl.R/HeelRoll.R
+    m_Weight: 0
+  - m_Path: Armature/FootCtrl.R/HeelRoll.R/ToeRoll.R
+    m_Weight: 0
+  - m_Path: Armature/HandIK.L
+    m_Weight: 0
+  - m_Path: Armature/HandIK.R
+    m_Weight: 0
+  - m_Path: Armature/Root
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L/LowerArm.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L/LowerArm.L/Hand.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L/LowerArm.L/Hand.L/Fingers1.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L/LowerArm.L/Hand.L/Fingers1.L/Fingers2.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L/LowerArm.L/Thumb1.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.L/UpperArm.L/LowerArm.L/Thumb1.L/Thumb2.L
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R/LowerArm.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R/LowerArm.R/Hand.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R/LowerArm.R/Hand.R/Fingers1.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R/LowerArm.R/Hand.R/Fingers1.R/Fingers2.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R/LowerArm.R/Thumb1.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Chest.R/UpperArm.R/LowerArm.R/Thumb1.R/Thumb2.R
+    m_Weight: 0
+  - m_Path: Armature/Root/Neck
+    m_Weight: 0
+  - m_Path: Armature/Root/Neck/Chin
+    m_Weight: 0
+  - m_Path: Armature/Root/Neck/Head
+    m_Weight: 0
+  - m_Path: Armature/Root/Neck/Head/Nose
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.L
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.L/LowerLeg.L
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.L/LowerLeg.L/Foot.L
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.L/LowerLeg.L/Foot.L/Toe.L
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.R
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.R/LowerLeg.R
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.R/LowerLeg.R/Foot.R
+    m_Weight: 0
+  - m_Path: Armature/Root/UpperLeg.R/LowerLeg.R/Foot.R/Toe.R
+    m_Weight: 0
+  - m_Path: Body
+    m_Weight: 0
+  - m_Path: Eyeballs
+    m_Weight: 0
+  - m_Path: Eyeballs/Inner Eyeball
+    m_Weight: 0
+  - m_Path: Segway
+    m_Weight: 1
+  - m_Path: Segway/Empty
+    m_Weight: 1
+  - m_Path: Segway/FootGrip.L
+    m_Weight: 1
+  - m_Path: Segway/Footgrip.R
+    m_Weight: 1
+  - m_Path: Segway/Handle.L
+    m_Weight: 1
+  - m_Path: Segway/Handle.R
+    m_Weight: 1
+  - m_Path: Segway/Wheels
+    m_Weight: 1
+  - m_Path: Specs
+    m_Weight: 0
+  - m_Path: Sun
+    m_Weight: 0
+  - m_Path: Torus
+    m_Weight: 0
