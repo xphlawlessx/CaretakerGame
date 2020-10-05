@@ -26,6 +26,7 @@ public class Door : UIBroadcaster
                 {
                     Broadcast($"Kid spotted entering {_room.name}");
                     enemy.Fsm.ChangeState(fsm.ToProp);
+                    enemy.Fsm.EnterOrLeaveRoom(_room);
                 }
             }
             else if (other.CompareTag("Player"))

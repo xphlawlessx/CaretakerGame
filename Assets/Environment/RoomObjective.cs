@@ -14,6 +14,8 @@ namespace Environment
         private Door[] _doors;
 
         private bool _isDoorOpen;
+
+        private GameObject _light;
         private List<DestructableProp> _props;
 
         public Vector3 DoorPos
@@ -29,6 +31,8 @@ namespace Environment
         private void Start()
         {
             _doors = GetComponentsInChildren<Door>();
+            _light = GetComponentInChildren<Light>().gameObject;
+            _light.SetActive(false);
             _props = GetComponentsInChildren<DestructableProp>().ToList();
             numProps = _props.Count;
             Setup();
@@ -52,6 +56,11 @@ namespace Environment
         public void InvokeOnPlayerEnter()
         {
             OnPlayerEntered?.Invoke();
+        }
+
+        public void SetLights(bool on)
+        {
+            _light.SetActive(on);
         }
 
         public int DestroyProp(DestructableProp prop)

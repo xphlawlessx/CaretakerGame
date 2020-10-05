@@ -12,8 +12,8 @@ public class FirstPersonController : MonoBehaviour
     private Camera _cam;
     private float _coneR;
     private Vector3 _dir;
-    private NavMeshAgent _nav;
     private bool _isRotating;
+    private NavMeshAgent _nav;
 
     private void Start()
     {
@@ -27,6 +27,7 @@ public class FirstPersonController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (Input.GetKey(KeyCode.Space)) FindObjectOfType<Kid>().Track();
         _dir = GetDirInput();
         var isMove = _dir != Vector3.zero;
         _anim.SetBool(IsWalk, isMove);

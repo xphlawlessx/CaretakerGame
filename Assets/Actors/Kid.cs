@@ -18,6 +18,7 @@ public class Kid : UIBroadcaster, IKidClass
     private readonly float _ambientDamageTMax = 1f;
     private readonly float _hpMax = 10f;
     private readonly float _spawnTMax = 1f;
+    private readonly Vector3 offset = new Vector3(0, 0.5f, 0);
     private readonly float trackTMax = 30f;
 
     private float _ambientDamageT;
@@ -32,12 +33,12 @@ public class Kid : UIBroadcaster, IKidClass
     private Shader _trackShader;
 
     private List<Shader> baseShaders = new List<Shader>();
+    private LineRenderer footPrints;
     public EnemyFsm Fsm;
     public KidGroup Group;
     private bool isTracked;
     private bool isVisibleOnMap;
     private float miniMapT;
-    private readonly Vector3 offset = new Vector3(0, 0.5f, 0);
     private SkinnedMeshRenderer[] rends;
     private float trackT = 30f;
 
@@ -57,12 +58,12 @@ public class Kid : UIBroadcaster, IKidClass
     {
         _hp = _hpMax;
         _spawnT = _spawnTMax;
-        
+
         _trackShader = Shader.Find("Custom/Tracked");
         _player = FindObjectOfType<FirstPersonController>().transform;
         _nav = GetComponent<NavMeshAgent>();
         var lm = FindObjectOfType<LevelManager>();
-        Fsm = new EnemyFsm(_nav, transform, this, _player,lm);
+        Fsm = new EnemyFsm(_nav, transform, this, _player, lm);
         OnAmbientDamage += lm.AddDamageCashValue;
         _ambientDamageT = _ambientDamageTMax;
         _anim = GetComponent<Animator>();
@@ -70,7 +71,7 @@ public class Kid : UIBroadcaster, IKidClass
         AmbientDamage = 1; //Todo TempValue Do Something better
         SetUpClass();
         Setup();
-
+        footPrints = GetComponentInChildren<LineRenderer>();
         baseShaders = new List<Shader>();
         rends = GetComponentsInChildren<SkinnedMeshRenderer>();
         foreach (var rend in rends)
@@ -81,15 +82,9 @@ public class Kid : UIBroadcaster, IKidClass
     private void Update()
     {
         var delta = Time.deltaTime;
-        if (isTracked)
-        {
-            TrackMe(delta);
-        }
+        if (isTracked) TrackMe(delta);
 
-        if (isVisibleOnMap)
-        {
-            ShowOnMap(delta);
-        }
+        if (isVisibleOnMap) ShowOnMap(delta);
 
         if (Fsm == null) return;
         Fsm.Run();
@@ -132,6 +127,11 @@ public class Kid : UIBroadcaster, IKidClass
         }
     }
 
+    public GroupBehaviour GroupBehaviour { get; set; }
+
+    public Clothing Clothing { get; set; }
+    public int AmbientDamage { get; set; }
+
     private void ShowOnMap(float delta)
     {
         miniMapT -= delta;
@@ -142,31 +142,13 @@ public class Kid : UIBroadcaster, IKidClass
         }
     }
 
-    public GroupBehaviour GroupBehaviour { get; set; }
-
-    public Clothing Clothing { get; set; }
-    public int AmbientDamage { get; set; }
-
     private void TrackMe(float delta)
     {
         trackT -= delta;
-        var ray = new Ray(transform.position + offset,
-            (_player.position + offset - transform.position + offset).normalized);
-        if (Physics.SphereCast(ray, 1.5f, out var hit,
-            Vector3.Distance(_player.position, transform.position),
-            LayerMask.GetMask("Wall", "Props", "rbProps")))
-        {
-            ShowTrackingShader();
-        }
-        else
-        {
-            ShowBaseShader();
-        }
-
         if (trackT <= 0)
         {
             isTracked = false;
-            ShowBaseShader();
+            footPrints.positionCount = 0;
         }
     }
 
@@ -208,6 +190,10 @@ public class Kid : UIBroadcaster, IKidClass
         Debug.Log("track");
         isTracked = true;
         trackT = trackTMax;
+        var path = new NavMeshPath();
+        _nav.CalculatePath(_player.transform.position, path);
+        footPrints.positionCount = path.corners.Length;
+        footPrints.SetPositions(path.corners);
     }
 
     private void ShowBaseShader()
@@ -234,7 +220,7 @@ public class Kid : UIBroadcaster, IKidClass
         Fsm.ChangeState(Fsm.Disable);
         gameObject.GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
     }
-    
+
 
     public void RunAway()
     {

@@ -54,6 +54,7 @@ namespace StateMachine
             IsInRoom = !IsInRoom;
             if (IsInRoom)
             {
+                room.SetLights(true);
                 room.OnPlayerEntered -= _owner.RunAway;
                 room.OnRoomDestroyed -= RoomIsDestroyed;
             }

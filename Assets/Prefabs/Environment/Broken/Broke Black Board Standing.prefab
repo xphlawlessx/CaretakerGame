@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8744426772011104301}
   - component: {fileID: 786959149498833037}
   - component: {fileID: 4486297542275979721}
+  - component: {fileID: 777795146976735216}
   m_Layer: 14
   m_Name: Broke Black Board Standing
   m_TagString: Untagged
@@ -67,6 +68,19 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &4486297542275979721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926766587681829772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 10, z: 8}
+  m_Center: {x: 0, y: 4.6, z: 0}
+--- !u!65 &777795146976735216
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

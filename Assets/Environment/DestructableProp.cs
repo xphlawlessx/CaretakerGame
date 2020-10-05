@@ -37,9 +37,12 @@ public class DestructableProp : MonoBehaviour
         {
             var prop = Instantiate(_brokenVersion, transform.position, transform.rotation);
             var broken = prop.GetComponent<BrokenProp>();
-            if(broken!=null)
+            if (broken != null)
+            {
                 broken.brokenBy = by;
-            
+                broken.Value = Value;
+            }
+
             OnDestroyed?.Invoke(Value);
             Destroy(gameObject);
             if (room == null) return 0;
