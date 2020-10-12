@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Actors;
 using Environment;
+using Ludiq.PeekCore;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -10,6 +11,10 @@ using Random = UnityEngine.Random;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private GameObject kidPrefab;
+
+    [SerializeField] private GameObject careTakerPrefab;
+    [SerializeField] private GameObject miniMapPrefab;
+    [SerializeField] private Transform playerSpawn;
     private readonly List<Vector3> _enterExits = new List<Vector3>();
     private readonly int _groupsMax = 2;
     private readonly float _tMax = 10f;
@@ -22,8 +27,13 @@ public class LevelManager : MonoBehaviour
     private List<RoomObjective> _rooms;
     private float _t;
     private int _totalDamageValue;
+    private PlayerClass player;
 
-    //private int KIDINDEX;
+    private void Awake()
+    {
+        player = Instantiate(careTakerPrefab, playerSpawn.position, Quaternion.identity).GetComponent<PlayerClass>();
+        Instantiate(miniMapPrefab, playerSpawn.position, Quaternion.identity).GetComponent<MinimapIndicator>().Target = player.transform;
+    }
 
     private void Start()
     {
@@ -31,7 +41,6 @@ public class LevelManager : MonoBehaviour
         _levelTime *= 60;
         var exits = FindObjectsOfType<LevelEnterExit>();
         foreach (var e in exits) _enterExits.Add(e.transform.position);
-        
         _rooms = FindObjectsOfType<RoomObjective>().ToList();
         foreach (var room in _rooms) room.OnRoomDestroyed += RemoveRoom;
 
@@ -77,10 +86,11 @@ public class LevelManager : MonoBehaviour
         for (var i = 0; i < groupSize; i++)
         {
             var k = Instantiate(kidPrefab, pos, Quaternion.identity).GetComponent<Kid>();
+            Instantiate(miniMapPrefab, pos, Quaternion.identity).GetComponent<MinimapIndicator>().Target = k.transform;
             k.transform.position = pos;
-            //k.SetExitList(_enterExits);
             kids.Add(k);
             k.Group = group;
+            k.playerHasGoodMemory = player.SelectedClass == PlayerClass.CaretakerClass.Detective;
         }
 
         group.Kids = kids;
@@ -95,7 +105,6 @@ public class LevelManager : MonoBehaviour
 
         _kidsCount--;
         Destroy(kid.gameObject);
-        if (_kidsCount == 0) EndLevel();
     }
 
     public RoomObjective GetRoom(KidGroup kids)
@@ -108,10 +117,10 @@ public class LevelManager : MonoBehaviour
 
         _kidPos = kids.CenterPosition;
         _rooms.Sort(SortByDistanceFromKids);
-
+        var slice = _rooms.Count / 2;
         var objective = kids.DestructionBehaviour == DestructionBehaviour.Shortest
-            ? _rooms[0]
-            : _rooms[_rooms.Count - 1];
+            ? _rooms[Random.Range(0,slice)]
+            : _rooms[Random.Range(_rooms.Count -slice,_rooms.Count - 1)];
 
         return objective;
     }

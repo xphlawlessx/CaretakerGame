@@ -14,6 +14,7 @@
           <e p="KidGroup.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />
         </e>
+        <e p="DontDestroyMe.cs" t="Include" />
         <e p="Environment" t="Include">
           <e p="BrokenProp.cs" t="Include" />
           <e p="CameraSettings.cs" t="Include" />
@@ -23,6 +24,7 @@
           <e p="LevelManager.cs" t="Include" />
           <e p="RoomObjective.cs" t="Include" />
         </e>
+        <e p="Lightswitch.cs" t="Include" />
         <e p="Ludiq" t="Include">
           <e p="Ludiq.Peek" t="Include">
             <e p="Editor" t="Include">
@@ -1294,6 +1296,7 @@
             </e>
           </e>
         </e>
+        <e p="MinimapIndicator.cs" t="Include" />
         <e p="Shaders" t="Include">
           <e p="Tracked.shader" t="Include" />
         </e>

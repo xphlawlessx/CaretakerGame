@@ -12,6 +12,8 @@ public class UserInterface : MonoBehaviour
     private TextMeshProUGUI _dialogueText;
     private bool _isShowDialogue;
 
+    public string Message => _dialogueText.text;
+
     private void Start()
     {
         _dialogueParent = GameObject.Find("DialoguePanel");

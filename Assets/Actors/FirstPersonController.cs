@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Cinemachine;
+using Environment;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class FirstPersonController : MonoBehaviour
@@ -8,12 +10,14 @@ public class FirstPersonController : MonoBehaviour
     private static readonly int IsWalk = Animator.StringToHash("IsWalk");
     [SerializeField] public Transform torch;
     public float speed = 5f;
+    public Lightswitch nearestSwitch { get; set; }
     private Animator _anim;
     private Camera _cam;
     private float _coneR;
     private Vector3 _dir;
     private bool _isRotating;
     private NavMeshAgent _nav;
+    bool isStartBlend = true;
 
     private void Start()
     {
@@ -27,7 +31,15 @@ public class FirstPersonController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space)) FindObjectOfType<Kid>().Track();
+        if (isStartBlend)
+        {
+            if(_cam.GetComponent<CinemachineBrain>().IsBlending)
+                return;
+            else
+            {
+                isStartBlend = false;
+            }
+        }
         _dir = GetDirInput();
         var isMove = _dir != Vector3.zero;
         _anim.SetBool(IsWalk, isMove);
@@ -37,6 +49,10 @@ public class FirstPersonController : MonoBehaviour
             _nav.Move(movement * speed * Time.deltaTime);
         }
 
+        if (nearestSwitch && Input.GetButton("Interact"))
+        {
+            nearestSwitch.TurnOff();
+        }
         var ray = _cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
         Quaternion direction;
         direction = Quaternion.LookRotation(ray.direction.normalized * CamOffset);
@@ -47,11 +63,11 @@ public class FirstPersonController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation,
             direction, RotSpeed * Time.deltaTime);
 
-        var hits = Physics.OverlapSphere(transform.position, 25f);
+        var hits = Physics.OverlapSphere(transform.position, 15f);
         foreach (var e in hits)
         {
             var enemy = e.GetComponent<Kid>();
-            if (!enemy) continue;
+            if (!enemy || enemy.Fsm.State == enemy.Fsm.Disable) continue;
             var ePos = e.transform.position;
             var pos = torch.position;
             var dir = (ePos - pos).normalized;

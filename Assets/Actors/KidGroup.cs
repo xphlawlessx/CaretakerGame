@@ -9,10 +9,25 @@ namespace Actors
 {
     public class KidGroup
     {
+        public Kid Leader
+        {
+            get
+            {
+                Kids.Sort(SortByLeadership);
+                for (var i = 0; i < Kids.Count; i++)
+                {
+                    var kid = Kids[i];
+                    kid.IsLeader = i == 0;
+                }
+                return Kids[0];
+            }
+        }
+
         public KidGroup()
         {
             var db = Enum.GetValues(typeof(DestructionBehaviour));
             DestructionBehaviour = (DestructionBehaviour) db.GetValue(Random.Range(0, db.Length));
+            Kids = new List<Kid>();
         }
 
         public List<Kid> Kids { get; set; }
@@ -31,13 +46,10 @@ namespace Actors
                 return result;
             }
         }
-
-        public List<Kid> GetOtherKids(Kid self)
+        
+        private int SortByLeadership(Kid a, Kid b)
         {
-            var query = from kid in Kids
-                where kid != self
-                select kid;
-            return query.ToList();
+            return a.Leadership.CompareTo(b.Leadership);
         }
     }
 }

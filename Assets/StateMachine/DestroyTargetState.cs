@@ -16,14 +16,12 @@ namespace StateMachine
 
         public override void Init()
         {
-            Owner.Animate();
             Nav.isStopped = true;
             _target = Owner.Fsm.TargetProp;
         }
 
         public override void Run()
         {
-            Owner.Animate();
             _T -= Time.deltaTime;
             if (_T <= 0)
             {

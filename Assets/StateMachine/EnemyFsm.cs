@@ -1,4 +1,5 @@
-﻿using Environment;
+﻿using Actors;
+using Environment;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
@@ -12,7 +13,6 @@ namespace StateMachine
         private readonly NavMeshAgent _nav;
         private readonly Kid _owner;
 
-
         public readonly EnemyState Disable;
         public readonly EnemyState Flee;
         public readonly EnemyState LeaveLevel;
@@ -20,8 +20,10 @@ namespace StateMachine
         public readonly EnemyState ToProp;
         public readonly EnemyState ToRoom;
         public readonly EnemyState Victory;
+        public float baseSpeed = 7f;
         public EnemyState DestroyTarget;
-        public Vector3 FleeTarget;
+
+        public float fleeSpeed = 10f;
 
         public bool IsInRoom;
 
@@ -31,9 +33,9 @@ namespace StateMachine
         public EnemyFsm(NavMeshAgent nav, Transform transform, Kid owner, Transform player, LevelManager lm)
         {
             _nav = nav;
+            if (nav.speed != baseSpeed) baseSpeed = nav.speed;
             _owner = owner;
             _lm = lm;
-
             DestroyTarget = new DestroyTargetState(_nav, transform, _owner);
             Disable = new DisabledState(_nav, transform, _owner);
             Flee = new FleeState(_nav, transform, _owner, player, _lm);
@@ -66,15 +68,34 @@ namespace StateMachine
         public void ChangeState(EnemyState to)
         {
             //Debug.Log("from - " + State + " to -" + to);
+            if (State == Flee) _nav.speed = baseSpeed;
             to.Init();
             State = to;
+            _owner.AnimateOrNot();
             _owner.GetComponentInChildren<FaceCamera>().GetComponentInChildren<TextMeshPro>().text =
                 State.ToString().Split('.')[1].Replace("State", "");
         }
 
         public void SetObjective(RoomObjective room)
         {
-            _owner.Group.Objective = room;
+            var leader = _owner.Group.Leader;
+            if (_owner.IsLeader) 
+            {
+                var hits = Physics.OverlapSphere(_owner.transform.position, 25f, LayerMask.GetMask("Enemy"));
+                foreach (var hit in hits)
+                {
+                    var kid = hit.GetComponent<Kid>();
+                    if (leader.Leadership < _owner.Leadership)
+                    {
+                        kid.ChangeGroup(_owner.Group);
+                    }
+                }
+                _owner.Group.Objective = room;
+            }
+            else if (_owner.Lonewolf > _owner.Group.Leader.Leadership)
+            {
+                _owner.ChangeGroup( new KidGroup());
+            }
         }
 
         [CanBeNull]

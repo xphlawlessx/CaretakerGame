@@ -22,8 +22,8 @@ namespace StateMachine
         {
             Nav.isStopped = false;
             Nav.SetDestination(_lm.GetExitPos());
-            Owner.Animate();
             Decided = false;
+            Nav.speed = Owner.Fsm.fleeSpeed;
         }
 
         public override void Run()
@@ -44,7 +44,7 @@ namespace StateMachine
 
         private bool KeepFleeing()
         {
-            return Random.Range(0, 2) == 0;
+            return Random.Range(0, 10) == 0;
         }
     }
 }

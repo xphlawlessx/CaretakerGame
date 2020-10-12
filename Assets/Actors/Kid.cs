@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Actors;
 using DefaultNamespace;
 using StateMachine;
@@ -14,11 +13,11 @@ public class Kid : UIBroadcaster, IKidClass
     public float runRadius = 10f;
     public bool justSpawn = true;
     public bool isIdentified;
+    public bool playerHasGoodMemory;
     [SerializeField] private GameObject minimapIndicator;
     private readonly float _ambientDamageTMax = 1f;
     private readonly float _hpMax = 10f;
     private readonly float _spawnTMax = 1f;
-    private readonly Vector3 offset = new Vector3(0, 0.5f, 0);
     private readonly float trackTMax = 30f;
 
     private float _ambientDamageT;
@@ -30,16 +29,12 @@ public class Kid : UIBroadcaster, IKidClass
     private NavMeshAgent _nav;
     private Transform _player;
     private float _spawnT = 1f;
-    private Shader _trackShader;
-
-    private List<Shader> baseShaders = new List<Shader>();
     private LineRenderer footPrints;
     public EnemyFsm Fsm;
     public KidGroup Group;
     private bool isTracked;
     private bool isVisibleOnMap;
     private float miniMapT;
-    private SkinnedMeshRenderer[] rends;
     private float trackT = 30f;
 
     public bool IsInLight
@@ -58,8 +53,6 @@ public class Kid : UIBroadcaster, IKidClass
     {
         _hp = _hpMax;
         _spawnT = _spawnTMax;
-
-        _trackShader = Shader.Find("Custom/Tracked");
         _player = FindObjectOfType<FirstPersonController>().transform;
         _nav = GetComponent<NavMeshAgent>();
         var lm = FindObjectOfType<LevelManager>();
@@ -72,11 +65,6 @@ public class Kid : UIBroadcaster, IKidClass
         SetUpClass();
         Setup();
         footPrints = GetComponentInChildren<LineRenderer>();
-        baseShaders = new List<Shader>();
-        rends = GetComponentsInChildren<SkinnedMeshRenderer>();
-        foreach (var rend in rends)
-        foreach (var mat in rend.materials)
-            baseShaders.Add(mat.shader);
     }
 
     private void Update()
@@ -99,14 +87,14 @@ public class Kid : UIBroadcaster, IKidClass
             _hp -= delta;
             if (_hp <= 0)
             {
-                BroadcastMessage("I knew that was you Jimmy!");
+                Broadcast("I knew that was you Jimmy!");
                 isIdentified = true;
                 Fsm.ChangeState(Fsm.Victory);
             }
         }
         else if (_isRegen && _hp < _hpMax)
         {
-            _hp += delta;
+            _hp += playerHasGoodMemory ? delta * 0.5f : delta;
         }
 
         _hp = Mathf.Clamp(_hp, 0, _hpMax);
@@ -127,7 +115,9 @@ public class Kid : UIBroadcaster, IKidClass
         }
     }
 
-    public GroupBehaviour GroupBehaviour { get; set; }
+    public bool IsLeader { get; set; }
+    public int Leadership { get; set; }
+    public int Lonewolf { get; set; }
 
     public Clothing Clothing { get; set; }
     public int AmbientDamage { get; set; }
@@ -163,14 +153,19 @@ public class Kid : UIBroadcaster, IKidClass
 
     private void SetUpClass()
     {
-        var gb = Enum.GetValues(typeof(GroupBehaviour));
-        GroupBehaviour = (GroupBehaviour) gb.GetValue(Random.Range(0, gb.Length));
-
+        Leadership = Random.Range(1, 7);
+        Lonewolf = Random.Range(1, 11);
         var cl = Enum.GetValues(typeof(Clothing));
-        Clothing = (Clothing) cl.GetValue(Random.Range(0, gb.Length));
+        Clothing = (Clothing) cl.GetValue(Random.Range(0, cl.Length));
     }
 
-    public void Animate()
+    public void ChangeGroup(KidGroup to)
+    {
+        Group.Kids.Remove(this);
+        to.Kids.Add(this);
+        Group = to;
+    }
+    public void AnimateOrNot()
     {
         if (_anim == null) _anim = GetComponent<Animator>();
         var state = Fsm.State;
@@ -196,29 +191,10 @@ public class Kid : UIBroadcaster, IKidClass
         footPrints.SetPositions(path.corners);
     }
 
-    private void ShowBaseShader()
-    {
-        foreach (var rend in rends)
-            for (var i = 0; i < rend.materials.Length; i++)
-            {
-                var mat = rend.materials[i];
-                mat.shader = baseShaders[i];
-            }
-    }
-
-    private void ShowTrackingShader()
-    {
-        foreach (var rend in rends)
-        foreach (var mat in rend.materials)
-            mat.shader = _trackShader;
-    }
-
-
     public void DisableMe()
     {
         Fsm.Disable.ResetT();
         Fsm.ChangeState(Fsm.Disable);
-        gameObject.GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
     }
 
 

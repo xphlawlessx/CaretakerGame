@@ -21,7 +21,6 @@ namespace StateMachine
             Nav.isStopped = false;
             //Owner.Fsm.FleeTarget = ;
             Nav.SetDestination(_lm.GetExitPos());
-            Owner.Animate();
         }
 
         public override void Run()

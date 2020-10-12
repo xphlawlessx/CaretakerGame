@@ -24,7 +24,7 @@ public class Door : UIBroadcaster
                 var fsm = enemy.Fsm;
                 if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel && fsm.State != fsm.LeaveRoom)
                 {
-                    Broadcast($"Kid spotted entering {_room.name}");
+                    Broadcast($"Kid spotted entering {_room.name} in the {_room.area} ");
                     enemy.Fsm.ChangeState(fsm.ToProp);
                     enemy.Fsm.EnterOrLeaveRoom(_room);
                 }

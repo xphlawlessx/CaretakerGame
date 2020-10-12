@@ -6,6 +6,7 @@ namespace StateMachine
     public class ToPropState : EnemyState
     {
         private DestructableProp target;
+
         public ToPropState(NavMeshAgent nav, Transform trans, Kid owner) : base(nav, trans, owner)
         {
             Nav = nav;
@@ -24,7 +25,7 @@ namespace StateMachine
                 return;
             }
 
-            Owner.Animate();
+
             Nav.SetDestination(target.transform.position);
         }
 
@@ -46,7 +47,7 @@ namespace StateMachine
             var path = Nav.path;
             for (var i = 0; i < path.corners.Length - 1; i++)
                 Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
-           if(target==null) Owner.Fsm.ChangeState(this);
+            if (target == null) Owner.Fsm.ChangeState(this);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Environment
 
         private GameObject _light;
         private List<DestructableProp> _props;
-
+        public LevelArea area;
         public Vector3 DoorPos
         {
             get
@@ -67,14 +67,19 @@ namespace Environment
         {
             _props.Remove(prop);
 
-            Broadcast($"They're smashing up {name}");
+            Broadcast($"They're smashing up {name} , get to the {area} ");
             if (_props.Count < 1)
             {
                 OnRoomDestroyed?.Invoke(this);
-                Broadcast($"Room {name} is completley trashed");
+                Broadcast($"Room {name} in {area} is completely trashed");
             }
 
             return _props.Count;
         }
+    }
+
+    public enum LevelArea
+    {
+        NorthWestWing , NorthEastWing, SouthWestWing, SouthEastWing
     }
 }

@@ -25,7 +25,7 @@ namespace StateMachine
                 return;
             }
 
-            Owner.Animate();
+
             Nav.SetDestination(target.transform.position);
         }
 

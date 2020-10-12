@@ -2,7 +2,7 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="8" />
-    <option name="CUSTOM_SCOPE_NAME" value="Open Files" />
+    <option name="CUSTOM_SCOPE_NAME" value="Default Changelist" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -10,18 +10,57 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="Init Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/Kid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/Kid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera Blends.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera Blends.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Rooms/Classroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Rooms/Classroom.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Segway.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Segway.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,25 +69,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/User/OneDrive/unity/CareTaker/CareTaker/Assets/Actors/PlayerClass.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/EnemyWanderState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/State.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UserInterface/ScoreLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.2/Runtime/Behaviours/Cinemachine3rdPersonAim.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Mission Impossible/Lab Shootout/LabShootout/Assets/Actors/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MinimapIndicator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/CameraSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/LevelEnterExit.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/PreDisableState.cs" />
-        <option value="$PROJECT_DIR$/Assets/FirstPersonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/PreFleeState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/PreToTargetState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/PreWanderState.cs" />
         <option value="$PROJECT_DIR$/Assets/DestructableProp.cs" />
@@ -60,9 +94,6 @@
         <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/ToTargetState.cs" />
         <option value="$PROJECT_DIR$/Assets/GlobalAndMisc/DestructableProp.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/VictoryState.cs" />
         <option value="$PROJECT_DIR$/Assets/Environment/LevelEnterExit.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/Enemy.cs" />
@@ -72,28 +103,37 @@
         <option value="$PROJECT_DIR$/Assets/UIBroadcastable.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface.cs" />
         <option value="$PROJECT_DIR$/Assets/Door.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterSelect.cs" />
-        <option value="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface/SegwayUI.cs" />
         <option value="$PROJECT_DIR$/Assets/FaceCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" />
         <option value="$PROJECT_DIR$/Assets/Shaders/Tracked.shader" />
         <option value="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" />
+        <option value="$PROJECT_DIR$/Assets/BrokenProp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" />
-        <option value="$PROJECT_DIR$/Assets/BrokenProp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Lightswitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/CharacterSelect.cs" />
+        <option value="$PROJECT_DIR$/Assets/MinimapIndicator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -197,6 +237,12 @@
       <workItem from="1601635563679" duration="4859000" />
       <workItem from="1601677972493" duration="1200000" />
       <workItem from="1601680286428" duration="1109000" />
+      <workItem from="1602154915765" duration="2116000" />
+      <workItem from="1602241694949" duration="4235000" />
+      <workItem from="1602421282372" duration="682000" />
+      <workItem from="1602422178547" duration="7866000" />
+      <workItem from="1602498999429" duration="7710000" />
+      <workItem from="1602514194042" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1601680681544</created>
@@ -224,7 +270,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -235,6 +281,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -242,10 +289,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1601639192768">
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1602502491546">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1601639192768" />
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1602502491546" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1602066735348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1602066735348" />
     <state width="1323" height="253" key="GridCell.Tab.0.bottom" timestamp="1600384104347">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -322,18 +373,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599750517312" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1601680773860">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1602066438427">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601680773860" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602066438427" />
     <state x="202" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600775397400">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="202" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1600775397400" />
-    <state x="651" y="39" width="667" height="656" key="find.popup" timestamp="1601640058488">
+    <state x="651" y="39" width="667" height="656" key="find.popup" timestamp="1602508260762">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="651" y="39" width="667" height="656" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601640058488" />
+    <state x="651" y="39" width="667" height="656" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1602508260762" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1600858995764">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
