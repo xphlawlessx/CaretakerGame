@@ -79,23 +79,21 @@ namespace StateMachine
         public void SetObjective(RoomObjective room)
         {
             var leader = _owner.Group.Leader;
-            if (_owner.IsLeader) 
+            if (_owner.IsLeader)
             {
                 var hits = Physics.OverlapSphere(_owner.transform.position, 25f, LayerMask.GetMask("Enemy"));
                 foreach (var hit in hits)
                 {
                     var kid = hit.GetComponent<Kid>();
-                    if (leader.Leadership < _owner.Leadership)
-                    {
-                        kid.ChangeGroup(_owner.Group);
-                    }
+                    if (leader.Leadership < _owner.Leadership) kid.ChangeGroup(_owner.Group);
                 }
-                _owner.Group.Objective = room;
             }
             else if (_owner.Lonewolf > _owner.Group.Leader.Leadership)
             {
-                _owner.ChangeGroup( new KidGroup());
+                _owner.ChangeGroup(new KidGroup());
             }
+
+            _owner.Group.Objective = room;
         }
 
         [CanBeNull]

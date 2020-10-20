@@ -17,8 +17,7 @@ namespace StateMachine
         }
 
         public override void Init()
-        {
-            Nav.isStopped = false;
+        {            Nav.isStopped = false;
             //Owner.Fsm.FleeTarget = ;
             Nav.SetDestination(_lm.GetExitPos());
         }

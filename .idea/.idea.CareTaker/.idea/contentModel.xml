@@ -6,7 +6,7 @@
     <e p="C:\Users\User\OneDrive\unity\CareTaker\CareTaker" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Actors" t="Include">
+        <e p="_Actors" t="Include">
           <e p="FaceCamera.cs" t="Include" />
           <e p="FirstPersonController.cs" t="Include" />
           <e p="IKidClass.cs" t="Include" />
@@ -14,17 +14,25 @@
           <e p="KidGroup.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />
         </e>
-        <e p="DontDestroyMe.cs" t="Include" />
-        <e p="Environment" t="Include">
+        <e p="_Environment" t="Include">
           <e p="BrokenProp.cs" t="Include" />
           <e p="CameraSettings.cs" t="Include" />
           <e p="DestructableProp.cs" t="Include" />
           <e p="Door.cs" t="Include" />
           <e p="LevelEnterExit.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
+          <e p="Lightswitch.cs" t="Include" />
           <e p="RoomObjective.cs" t="Include" />
         </e>
-        <e p="Lightswitch.cs" t="Include" />
+        <e p="_UserInterface" t="Include">
+          <e p="CharacterSelect.cs" t="Include" />
+          <e p="MinimapIndicator.cs" t="Include" />
+          <e p="ScoreLevel.cs" t="Include" />
+          <e p="SegwayUI.cs" t="Include" />
+          <e p="UIBroadcastable.cs" t="Include" />
+          <e p="UserInterface.cs" t="Include" />
+        </e>
+        <e p="DontDestroyMe.cs" t="Include" />
         <e p="Ludiq" t="Include">
           <e p="Ludiq.Peek" t="Include">
             <e p="Editor" t="Include">
@@ -1296,7 +1304,6 @@
             </e>
           </e>
         </e>
-        <e p="MinimapIndicator.cs" t="Include" />
         <e p="Shaders" t="Include">
           <e p="Tracked.shader" t="Include" />
         </e>
@@ -1339,13 +1346,6 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
-        </e>
-        <e p="UserInterface" t="Include">
-          <e p="CharacterSelect.cs" t="Include" />
-          <e p="ScoreLevel.cs" t="Include" />
-          <e p="SegwayUI.cs" t="Include" />
-          <e p="UIBroadcastable.cs" t="Include" />
-          <e p="UserInterface.cs" t="Include" />
         </e>
       </e>
       <e p="CareTaker.sln" t="IncludeFlat" />
