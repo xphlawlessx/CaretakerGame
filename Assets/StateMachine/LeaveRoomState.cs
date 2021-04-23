@@ -17,21 +17,16 @@ namespace StateMachine
 
         public override void Init()
         {
-            var room = _lm.GetRoom(Owner.Group);
+            var room = _lm.GetRoom(Owner.Group.CenterPosition);
             if (room == null)
-            {
                 Owner.Fsm.SetObjective(Owner.Group.Objective);
-            }
             else
-            {
                 Owner.Fsm.SetObjective(room);
-            }
             Owner.Fsm.ChangeState(Owner.Fsm.ToRoom);
         }
 
         public override void Run()
         {
-            
             Owner.Fsm.ChangeState(Owner.Fsm.ToRoom);
         }
     }
