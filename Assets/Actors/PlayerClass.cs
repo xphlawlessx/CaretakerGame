@@ -14,7 +14,6 @@ public class PlayerClass : MonoBehaviour
         Assistant
     }
 
-    public CaretakerClass SelectedClass;
     private readonly float regenTMax = 2f;
     private readonly float shootTMax = 2f;
     private readonly float sprintTMax = 2f;
@@ -34,11 +33,13 @@ public class PlayerClass : MonoBehaviour
     private bool isRegen;
     private bool isSprint;
     private LevelManager lm;
+    public GameObject minimapIndicatior;
     private float regenT = 2f;
+
+    public CaretakerClass SelectedClass;
     private float shootT = 2f;
     private float sprintT = 2f;
     private int stamina = 5;
-    public GameObject minimapIndicatior;
 
     private void Awake()
     {
@@ -70,14 +71,10 @@ public class PlayerClass : MonoBehaviour
         }
 
         if (charname == "Tech")
-        {
             SelectedClass = CaretakerClass.Tech;
-        }
         else
-        {
             //GameObject.Find("Tech Camera").SetActive(false);
             GameObject.Find("Tech UI").SetActive(false);
-        }
 
         if (charname == "Detective") SelectedClass = CaretakerClass.Detective;
 

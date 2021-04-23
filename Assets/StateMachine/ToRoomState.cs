@@ -17,7 +17,7 @@ namespace StateMachine
 
         public override void Init()
         {
-            target = Owner.Group.Objective;
+            target = Owner.TargetRoom;
             Nav.isStopped = false;
             if (target == null)
             {

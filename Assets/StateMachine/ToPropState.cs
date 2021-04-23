@@ -21,6 +21,7 @@ namespace StateMachine
             Nav.isStopped = false;
             if (target == null)
             {
+                Debug.Log("no target");
                 Owner.Fsm.ChangeState(Owner.Fsm.LeaveRoom);
                 return;
             }
@@ -42,6 +43,8 @@ namespace StateMachine
                 var rb = prop.GetComponent<Rigidbody>();
                 rb.AddExplosionForce(350f, propPos - dir, 2f);
             }
+
+            if (Nav.remainingDistance < 1) Owner.Fsm.ChangeState(Owner.Fsm.DestroyTarget);
 
             var offset = new Vector3(0, 1, 0);
             var path = Nav.path;

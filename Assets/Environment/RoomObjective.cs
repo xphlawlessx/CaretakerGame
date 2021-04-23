@@ -9,15 +9,14 @@ namespace Environment
 {
     public class RoomObjective : UIBroadcaster
     {
-        public int numProps;
-        public LevelArea area;
-
         private Door[] _doors;
 
         private bool _isDoorOpen;
 
         private GameObject _light;
         private List<DestructableProp> _props;
+        public LevelArea area;
+        public int numProps;
 
         public Vector3 DoorPos
         {
