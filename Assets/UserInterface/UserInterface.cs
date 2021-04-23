@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class UserInterface : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _queueText;
     private readonly float _dialogueTMax = 4f;
     private readonly Queue<string> _messages = new Queue<string>();
     private GameObject _dialogueParent;
     private float _dialogueT;
     private TextMeshProUGUI _dialogueText;
     private bool _isShowDialogue;
+    [SerializeField] private TextMeshProUGUI _queueText;
 
     public string Message => _dialogueText.text;
 

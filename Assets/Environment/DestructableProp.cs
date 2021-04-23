@@ -5,9 +5,9 @@ using UnityEngine;
 public class DestructableProp : MonoBehaviour
 {
     [SerializeField] private GameObject _brokenVersion;
-    [SerializeField] private int Value = 500;
-    public RoomObjective room;
     private int hp = 1;
+    public RoomObjective room;
+    [SerializeField] private int Value = 500;
 
     private void Start()
     {

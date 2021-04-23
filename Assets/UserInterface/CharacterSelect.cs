@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class CharacterSelect : MonoBehaviour
 {
-    [SerializeField] private Button _startButton;
     [SerializeField] private TextMeshProUGUI _charLabel;
     private string _charName = "";
+    [SerializeField] private Button _startButton;
 
     private void Update()
     {

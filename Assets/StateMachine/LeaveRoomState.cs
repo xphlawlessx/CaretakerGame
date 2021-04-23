@@ -17,11 +17,8 @@ namespace StateMachine
 
         public override void Init()
         {
-            var room = _lm.GetRoom(Owner.Group.CenterPosition);
-            if (room == null)
-                Owner.Fsm.SetObjective(Owner.Group.Objective);
-            else
-                Owner.Fsm.SetObjective(room);
+            var room = _lm.GetRoom(Owner.transform.position);
+            Owner.Fsm.SetObjective(room);
             Owner.Fsm.ChangeState(Owner.Fsm.ToRoom);
         }
 

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Door : UIBroadcaster
 {
-    [SerializeField] private GameObject mesh;
     private bool _isOpen;
     private RoomObjective _room;
+    [SerializeField] private GameObject mesh;
 
     private void Start()
     {
@@ -16,31 +16,32 @@ public class Door : UIBroadcaster
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!_isOpen)
+        if (other.CompareTag("Enemy"))
         {
-            if (other.CompareTag("Enemy"))
+            var enemy = other.GetComponent<Kid>();
+            var fsm = enemy.Fsm;
+            if (!fsm.IsInRoom)
             {
-                var enemy = other.GetComponent<Kid>();
-                // var fsm = enemy.Fsm;
                 // if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel && fsm.State != fsm.LeaveRoom)
-                // {
-                //     Broadcast($"Kid spotted entering {_room.name} in the {_room.area} ");
-                //     // enemy.Fsm.ChangeState(fsm.ToProp);
-                //     // enemy.Fsm.EnterOrLeaveRoom(_room);
-                // }
+                //{
+                //}
+
+                Broadcast($"Kid spotted entering {_room.name} in the {_room.area} ");
+                enemy.Fsm.IsInRoom = true;
             }
-            else if (other.CompareTag("Player"))
+            else
             {
-                _room.InvokeOnPlayerEnter();
+                enemy.Fsm.IsInRoom = false;
             }
 
-            mesh.SetActive(false);
-            _isOpen = true;
+            if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel) enemy.Fsm.EnterOrLeaveRoom(_room);
         }
-        else
+        else if (other.CompareTag("Player"))
         {
-            _isOpen = false;
-            mesh.SetActive(true);
+            _room.InvokeOnPlayerEnter();
         }
+
+        _isOpen = !_isOpen;
+        mesh.SetActive(_isOpen);
     }
 }

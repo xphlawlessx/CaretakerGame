@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Actors;
 using Environment;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,11 +8,6 @@ using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private GameObject kidPrefab;
-
-    [SerializeField] private GameObject careTakerPrefab;
-    [SerializeField] private GameObject miniMapPrefab;
-    [SerializeField] private Transform playerSpawn;
     private readonly List<Vector3> _enterExits = new List<Vector3>();
     private readonly int _groupsMax = 4;
     private readonly float _tMax = 10f;
@@ -26,7 +20,12 @@ public class LevelManager : MonoBehaviour
     private List<RoomObjective> _rooms;
     private float _t;
     private int _totalDamageValue;
+
+    [SerializeField] private GameObject careTakerPrefab;
+    [SerializeField] private GameObject kidPrefab;
+    [SerializeField] private GameObject miniMapPrefab;
     private PlayerClass player;
+    [SerializeField] private Transform playerSpawn;
 
     private void Awake()
     {
@@ -59,10 +58,8 @@ public class LevelManager : MonoBehaviour
         if (_groups > _groupsMax) return;
         _t -= Time.deltaTime;
         if (_t <= 0)
-        {
             _t = _tMax;
-            SpawnKids();
-        }
+        //SpawnKids();
     }
 
     private void EndLevel()
@@ -79,12 +76,8 @@ public class LevelManager : MonoBehaviour
 
     private void SpawnKids()
     {
-        _groups++;
-
         var groupSize = Random.Range(2, 5);
         var pos = _enterExits[Random.Range(0, _enterExits.Count)];
-        var kids = new List<Kid>();
-        var group = new KidGroup();
         for (var i = 0; i < groupSize; i++)
         {
             var k = Instantiate(kidPrefab, pos, Quaternion.identity).GetComponent<Kid>();
@@ -93,12 +86,8 @@ public class LevelManager : MonoBehaviour
             k.minimapIndicator = mini.gameObject;
             k.minimapIndicator.SetActive(false);
             k.transform.position = pos;
-            kids.Add(k);
-            k.Group = group;
             k.playerHasGoodMemory = player.SelectedClass == PlayerClass.CaretakerClass.Detective;
         }
-
-        group.Kids = kids;
     }
 
     public void DestroyKid(Kid kid)
@@ -109,7 +98,6 @@ public class LevelManager : MonoBehaviour
             _kidsEscaped++;
 
         _kidsCount--;
-        kid.Group.Kids.Remove(kid);
         Destroy(kid.gameObject);
     }
 

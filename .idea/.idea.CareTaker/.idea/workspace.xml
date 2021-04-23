@@ -2,7 +2,7 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="8" />
-    <option name="CUSTOM_SCOPE_NAME" value="Default Changelist" />
+    <option name="CUSTOM_SCOPE_NAME" value="Recently Changed Files" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -30,121 +30,27 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="Init Commit">
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Character Select Models/Assistant.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Character Select Models/Detective.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Character Select Models/Segway.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Character Select Models/Tech.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/FaceCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Kid.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Kid.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/Segway.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Actors/footprints.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DontDestroyMe.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/Broke Black Board Standing.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/Broke Teacher's Chair 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/Broken Filing Cabinet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/Broken Locker.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/Broken plant.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/broken chair.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Broken/broken table.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Door.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/LevelEnterExit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/LevelMap.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Lightswitch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Blackboard.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Clock.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Black Board Standing.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Broke Stool.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Chair.006.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Filing Cabinet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Locker.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Plant Pot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Stool.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Table.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Destructable/Teacher's Chair.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Props/Picture.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Rooms/Classroom.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Environment/Rooms/Door.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/FACE THIEF.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/1914550_1560462520950107_1698430626625563392_n.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/28951029_10155013343520683_8995368811269678913_n.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/78593496-de-rode-muur-verf-textuur-achtergrond.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/GRIFF2-01.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.001.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.004.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.006.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.007.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.008.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.013.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.014.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.015.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.016.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.019.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.021.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.022.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.024.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.025.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.027.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.028.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.029.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.030.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.031.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.032.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.033.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.034.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.035.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.036.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.037.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.038.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.039.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.040.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.041.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.042.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.043.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.044.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.045.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Seamless coloured carpet floor texture.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Materials/me.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/classroomEDIT.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/janitor.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/janitorTEST.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/janitor_segway.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/props for school.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/segway armature action SECONDARY 1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NewPupils.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/CharacterSelect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/LevelMap.renderTexture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/Map.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/Materials/LevelMap 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/Materials/LevelMap.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/Materials/Map.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/Materials/lvlmap.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/MiniMapIndicator.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/MinimapIndicator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/RadarPing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/ScoreLevel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/SegwayUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UserInterface/lvlmap.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="Reverted to the FSM enemy AI">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/Kid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/Kid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UserInterface/CharacterSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UserInterface/CharacterSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,20 +62,29 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Environment/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Mission Impossible/Lab Shootout/LabShootout/Assets/Actors/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Actors/IKidClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Actors/KidGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Actors/Kid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/FullSerializer/Internal/fsTypeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Reflection/MemberOptionTree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/State.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/EnemyWanderState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Reflection/MemberOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Product/LudiqProduct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.2/Runtime/Behaviours/Cinemachine3rdPersonAim.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Actors/Kid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/State.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/EnemyWanderState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StateMachine/VictoryState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.Peek/Editor/Transforms/TransformMenuIntegration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Actors/FaceCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.Peek/Editor/Tabs/Tabs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.Peek/Editor/Context/GameObjectContextMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -205,7 +120,6 @@
         <option value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" />
         <option value="$PROJECT_DIR$/Assets/Lightswitch.cs" />
@@ -213,19 +127,20 @@
         <option value="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface/CharacterSelect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
         <option value="$PROJECT_DIR$/Assets/MinimapIndicator.cs" />
         <option value="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Actors/Kid.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
       </list>
     </option>
   </component>
@@ -240,7 +155,9 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498452" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3003096" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -249,7 +166,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -337,6 +254,7 @@
       <workItem from="1602515377551" duration="4789000" />
       <workItem from="1602584870192" duration="3764000" />
       <workItem from="1602598743074" duration="280000" />
+      <workItem from="1619197707150" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1601680681544</created>
@@ -352,11 +270,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602514715132</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reverted to the FSM enemy AI">
+      <created>1619177098414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619177098414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
@@ -413,21 +338,38 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Caretaker{&#10;re scaled player to better match scene&#10;player is now spawned at runtime.&#10;unified control scheme.&#10;can now turn lights off.&#10;Segway class - Sprinting causes ambient damage to surroundings.&#10;Detective class - Affects identification regen (good memory)&#10;Assistant class - bones of the CCTV system in  place, Bug with messages not firing, now messages contain a bit about what section of the level the room is in. &#10;}&#10;UI{&#10;added start camera with blend&#10;Minimap changed to render texture, minimap prefab created.&#10;fixed lots of scaling  bugs&#10;}&#10;Kids{&#10;kids can now switch groups if someone more charismatic is near.&#10;Leader will recruit nearby kids,&#10;Lonewolf will pick own objective / leave group&#10;}&#10;misc {&#10;removed incorrect lose condition.&#10;}" />
-    <option name="LAST_COMMIT_MESSAGE" value="Caretaker{&#10;re scaled player to better match scene&#10;player is now spawned at runtime.&#10;unified control scheme.&#10;can now turn lights off.&#10;Segway class - Sprinting causes ambient damage to surroundings.&#10;Detective class - Affects identification regen (good memory)&#10;Assistant class - bones of the CCTV system in  place, Bug with messages not firing, now messages contain a bit about what section of the level the room is in. &#10;}&#10;UI{&#10;added start camera with blend&#10;Minimap changed to render texture, minimap prefab created.&#10;fixed lots of scaling  bugs&#10;}&#10;Kids{&#10;kids can now switch groups if someone more charismatic is near.&#10;Leader will recruit nearby kids,&#10;Lonewolf will pick own objective / leave group&#10;}&#10;misc {&#10;removed incorrect lose condition.&#10;}" />
+    <MESSAGE value="Reverted to the FSM enemy AI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverted to the FSM enemy AI" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1619176614665">
+    <state x="275" y="27" key="#Notifications" timestamp="1619181348946">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1619176614665" />
+    <state x="275" y="27" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1619181348946" />
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1619182253569">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1619182253569" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1619175883601">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1619175883601" />
-    <state x="184" y="11" key="SettingsEditor" timestamp="1619176531527">
+    <state x="184" y="11" key="SettingsEditor" timestamp="1619181380532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1619176531527" />
+    <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1619181380532" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619182565067">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619182565067" />
+    <state x="373" y="21" key="VcsDiffUtil.ChangesDialog" timestamp="1619177689473">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="373" y="21" key="VcsDiffUtil.ChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1619177689473" />
+    <state x="349" y="85" width="667" height="568" key="find.popup" timestamp="1619181417102">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="349" y="85" width="667" height="568" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619181417102" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

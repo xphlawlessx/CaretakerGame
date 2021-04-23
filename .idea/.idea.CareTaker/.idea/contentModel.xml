@@ -9,9 +9,7 @@
         <e p="Actors" t="Include">
           <e p="FaceCamera.cs" t="Include" />
           <e p="FirstPersonController.cs" t="Include" />
-          <e p="IKidClass.cs" t="Include" />
           <e p="Kid.cs" t="Include" />
-          <e p="KidGroup.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />
         </e>
         <e p="DontDestroyMe.cs" t="Include" />

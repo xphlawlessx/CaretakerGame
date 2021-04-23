@@ -1,20 +1,14 @@
 ﻿using System;
-using Actors;
 using DefaultNamespace;
+using Environment;
 using StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
-using Random = UnityEngine.Random;
 
-public class Kid : UIBroadcaster, IKidClass
+public class Kid : UIBroadcaster
 {
     private static readonly int IsWalk = Animator.StringToHash("IsWalk");
     private static readonly int Destroy1 = Animator.StringToHash("Destroy");
-    public float runRadius = 10f;
-    public bool justSpawn = true;
-    public bool isIdentified;
-    public bool playerHasGoodMemory;
-    public GameObject minimapIndicator;
     private readonly float _ambientDamageTMax = 1f;
     private readonly float _hpMax = 10f;
     private readonly float _spawnTMax = 1f;
@@ -33,11 +27,17 @@ public class Kid : UIBroadcaster, IKidClass
     private LineRenderer footPrints;
 
     public EnemyFsm Fsm;
-    public KidGroup Group;
+    public bool isIdentified;
     private bool isTracked;
     private bool isVisibleOnMap;
+    public bool justSpawn = true;
+    public int Leadership; //TODO : random?
+    public GameObject minimapIndicator;
     private float miniMapT;
+    public bool playerHasGoodMemory;
+    public float runRadius = 10f;
     private float trackT = 30f;
+    public RoomObjective TargetRoom { get; set; }
 
     public bool IsInLight
     {
@@ -51,6 +51,8 @@ public class Kid : UIBroadcaster, IKidClass
         }
     }
 
+    public int AmbientDamage { get; set; }
+
     private void Start()
     {
         _hp = _hpMax;
@@ -58,13 +60,12 @@ public class Kid : UIBroadcaster, IKidClass
         _player = FindObjectOfType<FirstPersonController>().transform;
         _nav = GetComponent<NavMeshAgent>();
         var lm = FindObjectOfType<LevelManager>();
-        //Fsm = new EnemyFsm(_nav, transform, this, _player, lm);
+        Fsm = new EnemyFsm(_nav, transform, this, _player, lm);
         OnAmbientDamage += lm.AddDamageCashValue;
         _ambientDamageT = _ambientDamageTMax;
         _anim = GetComponent<Animator>();
         justSpawn = true;
         AmbientDamage = 1; //Todo TempValue Do Something better
-        SetUpClass();
         Setup();
         footPrints = GetComponentInChildren<LineRenderer>();
     }
@@ -76,8 +77,8 @@ public class Kid : UIBroadcaster, IKidClass
 
         if (isVisibleOnMap) ShowOnMap(delta);
 
-        //if (Fsm == null) return;
-        //Fsm.Run();
+        if (Fsm == null) return;
+        Fsm.Run();
         if (IsInLight)
         {
             if (Vector3.Distance(_player.position, transform.position) > 15f)
@@ -117,13 +118,6 @@ public class Kid : UIBroadcaster, IKidClass
         }
     }
 
-    public bool IsLeader { get; set; }
-    public int Leadership { get; set; }
-    public int Lonewolf { get; set; }
-
-    public Clothing Clothing { get; set; }
-    public int AmbientDamage { get; set; }
-
     private void ShowOnMap(float delta)
     {
         miniMapT -= delta;
@@ -153,39 +147,21 @@ public class Kid : UIBroadcaster, IKidClass
 
     private event Action<int> OnAmbientDamage;
 
-    private void SetUpClass()
-    {
-        Leadership = Random.Range(1, 7);
-        Lonewolf = Random.Range(1, 11);
-        var cl = Enum.GetValues(typeof(Clothing));
-        Clothing = (Clothing) cl.GetValue(Random.Range(0, cl.Length));
-    }
 
-    public void ChangeGroup(KidGroup to)
+    public void AnimateOrNot()
     {
-        Group.Kids.Remove(this);
-        to.Kids.Add(this);
-        Group = to;
-        
-        
-    }
-
-    
-    
-     public void AnimateOrNot()
-    {
-         if (_anim == null) _anim = GetComponent<Animator>();
-         var state = Fsm.State;
-         if (state == Fsm.DestroyTarget)
-         {
+        if (_anim == null) _anim = GetComponent<Animator>();
+        var state = Fsm.State;
+        if (state == Fsm.DestroyTarget)
+        {
             _anim.SetTrigger(Destroy1);
-         }
-         else
-         {
-             var isWalking = state != Fsm.Disable && state != Fsm.DestroyTarget;
-             _anim.SetBool(IsWalk, isWalking);
-         }
-     }
+        }
+        else
+        {
+            var isWalking = state != Fsm.Disable && state != Fsm.DestroyTarget;
+            _anim.SetBool(IsWalk, isWalking);
+        }
+    }
 
     public void Track()
     {

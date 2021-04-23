@@ -12,14 +12,14 @@ public class FirstPersonController : MonoBehaviour
     //CinemachinePOV _vCam;
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
-    [SerializeField] public Transform torch;
-    public float speed = 5f;
     private Animator _anim;
     private Camera _cam;
     private float _coneR;
     private Vector3 _dir;
     private bool _isRotating;
     private NavMeshAgent _nav;
+    public float speed = 5f;
+    [SerializeField] public Transform torch;
     public Lightswitch nearestSwitch { get; set; }
 
     private void Start()

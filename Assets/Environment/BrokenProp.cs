@@ -3,10 +3,10 @@
 public class BrokenProp : MonoBehaviour
 {
     public Kid brokenBy;
-
-    [SerializeField] private float timeToClean = 5f;
     private LevelManager lm;
     private PlayerClass pc;
+
+    [SerializeField] private float timeToClean = 5f;
     public int Value { get; set; }
 
     private void Start()

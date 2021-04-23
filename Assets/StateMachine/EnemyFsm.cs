@@ -1,5 +1,4 @@
-﻿using Actors;
-using Environment;
+﻿using Environment;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
@@ -46,7 +45,7 @@ namespace StateMachine
             ToRoom = new ToRoomState(_nav, transform, _owner);
 
             owner.Fsm = this;
-            SetObjective(_lm.GetRoom(_owner.Group.CenterPosition));
+            SetObjective(_lm.GetRoom(_owner.transform.position));
             ChangeState(ToRoom);
         }
 
@@ -57,12 +56,12 @@ namespace StateMachine
             if (IsInRoom)
             {
                 room.SetLights(true);
-                room.OnPlayerEntered -= _owner.RunAway;
-                room.OnRoomDestroyed -= RoomIsDestroyed;
+                room.OnPlayerEntered += _owner.RunAway;
+                room.OnRoomDestroyed += RoomIsDestroyed;
             }
 
-            room.OnPlayerEntered += _owner.RunAway;
-            room.OnRoomDestroyed += RoomIsDestroyed;
+            room.OnPlayerEntered -= _owner.RunAway;
+            room.OnRoomDestroyed -= RoomIsDestroyed;
         }
 
         public void ChangeState(EnemyState to)
@@ -78,28 +77,21 @@ namespace StateMachine
 
         public void SetObjective(RoomObjective room)
         {
-            var leader = _owner.Group.Leader;
-            if (_owner.IsLeader)
+            var hits = Physics.OverlapSphere(_owner.transform.position, 25f, LayerMask.GetMask("Enemy"));
+            foreach (var hit in hits)
             {
-                var hits = Physics.OverlapSphere(_owner.transform.position, 25f, LayerMask.GetMask("Enemy"));
-                foreach (var hit in hits)
-                {
-                    var kid = hit.GetComponent<Kid>();
-                    if (leader.Leadership < _owner.Leadership) kid.ChangeGroup(_owner.Group);
-                }
+                var kid = hit.GetComponent<Kid>();
+                if (kid.Leadership < _owner.Leadership) kid.Fsm.SetObjective(_owner.TargetRoom);
             }
-            else if (_owner.Lonewolf > _owner.Group.Leader.Leadership)
-            {
-                _owner.ChangeGroup(new KidGroup());
-            }
+            //TODO : Move this to on-trigger enter or something so it happens when passing in a corridor
 
-            _owner.Group.Objective = room;
+            _owner.TargetRoom = room;
         }
 
         [CanBeNull]
         public DestructableProp GetDestructionTarget()
         {
-            var objective = _owner.Group.Objective;
+            var objective = _owner.TargetRoom;
             if (objective == null) ChangeState(LeaveLevel);
             return objective.GetProp();
         }
@@ -112,6 +104,7 @@ namespace StateMachine
 
         private void RoomIsDestroyed(RoomObjective room)
         {
+            Debug.Log("room destroyed");
             ChangeState(LeaveRoom);
         }
     }
