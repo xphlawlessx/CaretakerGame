@@ -74,3 +74,6 @@ crashlytics-build.properties
 Assets/Ludiq/Ludiq.PeekCore
 Assets/Ludiq/Ludiq.Peek
 Assets/Ludiq.Generated/Transient
+/Ludiq/
+/Ludiq.Generated/
+/Prefabs/

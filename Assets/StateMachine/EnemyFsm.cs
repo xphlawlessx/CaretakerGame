@@ -46,7 +46,7 @@ namespace StateMachine
             ToRoom = new ToRoomState(_nav, transform, _owner);
 
             owner.Fsm = this;
-            SetObjective(_lm.GetRoom(_owner.Group));
+            SetObjective(_lm.GetRoom(_owner.Group.CenterPosition));
             ChangeState(ToRoom);
         }
 
