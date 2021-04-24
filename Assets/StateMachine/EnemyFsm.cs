@@ -8,10 +8,13 @@ namespace StateMachine
 {
     public class EnemyFsm
     {
+        //Components
         private readonly LevelManager _lm;
         private readonly NavMeshAgent _nav;
         private readonly Kid _owner;
+        public readonly EnemyState DestroyTarget;
 
+        //State References
         public readonly EnemyState Disable;
         public readonly EnemyState Flee;
         public readonly EnemyState LeaveLevel;
@@ -19,20 +22,19 @@ namespace StateMachine
         public readonly EnemyState ToProp;
         public readonly EnemyState ToRoom;
         public readonly EnemyState Victory;
+
         public float baseSpeed = 7f;
-        public EnemyState DestroyTarget;
 
         public float fleeSpeed = 10f;
 
         public bool IsInRoom;
 
         public EnemyState State;
-        public DestructableProp TargetProp;
 
         public EnemyFsm(NavMeshAgent nav, Transform transform, Kid owner, Transform player, LevelManager lm)
         {
             _nav = nav;
-            if (nav.speed != baseSpeed) baseSpeed = nav.speed;
+            baseSpeed = nav.speed;
             _owner = owner;
             _lm = lm;
             DestroyTarget = new DestroyTargetState(_nav, transform, _owner);
@@ -52,7 +54,7 @@ namespace StateMachine
 
         public void EnterOrLeaveRoom(RoomObjective room)
         {
-            IsInRoom = !IsInRoom;
+            //IsInRoom = !IsInRoom;
             if (IsInRoom)
             {
                 room.SetLights(true);
@@ -71,20 +73,11 @@ namespace StateMachine
             to.Init();
             State = to;
             _owner.AnimateOrNot();
-            _owner.GetComponentInChildren<FaceCamera>().GetComponentInChildren<TextMeshPro>().text =
-                State.ToString().Split('.')[1].Replace("State", "");
+          
         }
 
         public void SetObjective(RoomObjective room)
         {
-            var hits = Physics.OverlapSphere(_owner.transform.position, 25f, LayerMask.GetMask("Enemy"));
-            foreach (var hit in hits)
-            {
-                var kid = hit.GetComponent<Kid>();
-                if (kid.Leadership < _owner.Leadership) kid.Fsm.SetObjective(_owner.TargetRoom);
-            }
-            //TODO : Move this to on-trigger enter or something so it happens when passing in a corridor
-
             _owner.TargetRoom = room;
         }
 

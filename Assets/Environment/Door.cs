@@ -18,23 +18,15 @@ public class Door : UIBroadcaster
     {
         if (other.CompareTag("Enemy"))
         {
-            var enemy = other.GetComponent<Kid>();
-            var fsm = enemy.Fsm;
-            if (!fsm.IsInRoom)
-            {
-                // if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel && fsm.State != fsm.LeaveRoom)
-                //{
-                //}
+            var fsm = other.GetComponent<Kid>().Fsm;
+            fsm.IsInRoom = !fsm.IsInRoom;
+            if (fsm.IsInRoom)
+                if (fsm.State == fsm.ToRoom)
+                {
+                    Broadcast($"Kid spotted entering {_room.name} in the {_room.area} ");
+                }
 
-                Broadcast($"Kid spotted entering {_room.name} in the {_room.area} ");
-                enemy.Fsm.IsInRoom = true;
-            }
-            else
-            {
-                enemy.Fsm.IsInRoom = false;
-            }
-
-            if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel) enemy.Fsm.EnterOrLeaveRoom(_room);
+            if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel) fsm.EnterOrLeaveRoom(_room);
         }
         else if (other.CompareTag("Player"))
         {

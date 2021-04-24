@@ -2,8 +2,10 @@
 using DefaultNamespace;
 using Environment;
 using StateMachine;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class Kid : UIBroadcaster
 {
@@ -38,6 +40,7 @@ public class Kid : UIBroadcaster
     public float runRadius = 10f;
     private float trackT = 30f;
     public RoomObjective TargetRoom { get; set; }
+    public DestructableProp TargetProp { get; set; }
 
     public bool IsInLight
     {
@@ -68,6 +71,7 @@ public class Kid : UIBroadcaster
         AmbientDamage = 1; //Todo TempValue Do Something better
         Setup();
         footPrints = GetComponentInChildren<LineRenderer>();
+        Leadership = Random.Range(1, 6);
     }
 
     private void Update()
@@ -165,7 +169,6 @@ public class Kid : UIBroadcaster
 
     public void Track()
     {
-        Debug.Log("track");
         isTracked = true;
         trackT = trackTMax;
         var path = new NavMeshPath();
@@ -190,5 +193,15 @@ public class Kid : UIBroadcaster
     public void LeaveLevel()
     {
         Fsm?.ChangeState(Fsm.LeaveLevel);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            var kid = other.GetComponent<Kid>();
+            if (kid.Leadership >= Leadership) return;
+            kid.Fsm.SetObjective(TargetRoom);
+        }
     }
 }

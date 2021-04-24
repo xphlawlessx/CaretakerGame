@@ -31,8 +31,7 @@ namespace StateMachine
 
         public override void Run()
         {
-            if (Owner.Fsm.IsInRoom) Owner.Fsm.ChangeState(Owner.Fsm.ToProp);
-            if (target.GetProp() == null) Owner.Fsm.ChangeState(this);
+            if (Nav.remainingDistance < 1) Owner.Fsm.ChangeState(Owner.Fsm.ToProp);
             // var offset = new Vector3(0, 1, 0);
             // var path = Nav.path;
             // for (var i = 0; i < path.corners.Length - 1; i++)

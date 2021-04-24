@@ -471,8 +471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f01f58d41d4f0293d93b247242b0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numProps: 0
   area: 0
+  numProps: 0
 --- !u!65 &3690757980833088195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -482,10 +482,10 @@ BoxCollider:
   m_GameObject: {fileID: 3690757980833088192}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 4.5, y: 2, z: 6}
-  m_Center: {x: -11.5, y: 1.01, z: -6.5}
+  m_Size: {x: 0.5, y: 5, z: 6}
+  m_Center: {x: -11.5, y: 3, z: -6.5}
 --- !u!1 &3690757981138439454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,12 +1389,17 @@ PrefabInstance:
     - target: {fileID: 9211021073888485072, guid: 47637bba2e4977947ba6da7c7875a901,
         type: 3}
       propertyPath: m_Size.x
-      value: 4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9211021073888485072, guid: 47637bba2e4977947ba6da7c7875a901,
         type: 3}
       propertyPath: m_Center.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211021073888485072, guid: 47637bba2e4977947ba6da7c7875a901,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9211021073888485084, guid: 47637bba2e4977947ba6da7c7875a901,
         type: 3}
@@ -1449,6 +1454,11 @@ PrefabInstance:
     - target: {fileID: 9211021073888485084, guid: 47637bba2e4977947ba6da7c7875a901,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211021073888485085, guid: 47637bba2e4977947ba6da7c7875a901,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9211021073888485087, guid: 47637bba2e4977947ba6da7c7875a901,
