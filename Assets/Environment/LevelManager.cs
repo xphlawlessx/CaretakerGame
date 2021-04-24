@@ -111,10 +111,7 @@ public class LevelManager : MonoBehaviour
 
         _kidPos = pos;
         _rooms.Sort(SortByDistanceFromKids);
-        var slice = _rooms.Count / 2;
-        var objective = Random.Range(0f, 1f) > 0.5f //Todo soemthing better
-            ? _rooms[Random.Range(0, slice)]
-            : _rooms[Random.Range(_rooms.Count - slice, _rooms.Count - 1)];
+        var objective = _rooms[0];
 
         return objective;
     }

@@ -13,7 +13,7 @@ namespace DefaultNamespace
             OnBroadcast += ui.AddMessageToQueue;
         }
 
-        public void Broadcast(string message)
+        protected void Broadcast(string message)
         {
             OnBroadcast?.Invoke(message);
         }

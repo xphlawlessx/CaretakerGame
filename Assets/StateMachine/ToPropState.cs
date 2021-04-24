@@ -17,11 +17,10 @@ namespace StateMachine
         public override void Init()
         {
             target = Owner.Fsm.GetDestructionTarget();
-            //Debug.Log(target);
+            Owner.TargetProp = target;
             Nav.isStopped = false;
             if (target == null)
             {
-                Debug.Log("no target");
                 Owner.Fsm.ChangeState(Owner.Fsm.LeaveRoom);
                 return;
             }
@@ -46,11 +45,11 @@ namespace StateMachine
 
             if (Nav.remainingDistance < 1) Owner.Fsm.ChangeState(Owner.Fsm.DestroyTarget);
 
-            var offset = new Vector3(0, 1, 0);
-            var path = Nav.path;
-            for (var i = 0; i < path.corners.Length - 1; i++)
-                Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
-            if (target == null) Owner.Fsm.ChangeState(this);
+            // var offset = new Vector3(0, 1, 0);
+            // var path = Nav.path;
+            // for (var i = 0; i < path.corners.Length - 1; i++)
+            //     Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
+            //if (target == null) Owner.Fsm.ChangeState(this);
         }
     }
 }

@@ -16,23 +16,12 @@ public class DestructableProp : MonoBehaviour
         OnDestroyed += lm.AddDamageCashValue;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!other.CompareTag("Enemy")) return;
-        // var fsm = other.GetComponent<Kid>().Fsm;
-        // if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel)
-        // {
-        //     var enemy = other.GetComponent<Kid>();
-        //     //enemy.Fsm.TargetProp = this;
-        //     //enemy.Fsm.ChangeState(fsm.DestroyTarget);
-        // }
-    }
-
     private event Action<int> OnDestroyed;
 
     public int GetHit(Kid by)
     {
         hp -= 1;
+        Debug.Log(hp);
         if (hp <= 0)
         {
             var prop = Instantiate(_brokenVersion, transform.position, transform.rotation);

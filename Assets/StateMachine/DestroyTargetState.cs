@@ -17,7 +17,7 @@ namespace StateMachine
         public override void Init()
         {
             Nav.isStopped = true;
-            _target = Owner.Fsm.TargetProp;
+            _target = Owner.TargetProp;
         }
 
         public override void Run()
@@ -26,10 +26,15 @@ namespace StateMachine
             if (_T <= 0)
             {
                 if (_target == null)
+                {
                     Owner.Fsm.ChangeState(Owner.Fsm.LeaveRoom);
-                else if (_target.GetHit(Owner) > 0)
+                    return;
+                }
+
+                var hit = _target.GetHit(Owner);
+                if (hit > 0)
                     Owner.Fsm.ChangeState(Owner.Fsm.ToProp);
-                else if (_target.GetHit(Owner) == 0) Owner.Fsm.ChangeState(Owner.Fsm.LeaveRoom);
+                else if (hit == 0) Owner.Fsm.ChangeState(Owner.Fsm.LeaveRoom);
                 ResetT();
             }
         }
