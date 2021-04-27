@@ -1,6 +1,5 @@
 ﻿using Environment;
 using JetBrains.Annotations;
-using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -73,7 +72,6 @@ namespace StateMachine
             to.Init();
             State = to;
             _owner.AnimateOrNot();
-          
         }
 
         public void SetObjective(RoomObjective room)

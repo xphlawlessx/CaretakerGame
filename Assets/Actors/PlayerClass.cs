@@ -19,7 +19,7 @@ public class PlayerClass : MonoBehaviour
     private readonly float sprintTMax = 2f;
     private readonly int staminaMax = 5;
 
-    private UserInterface _assistantUi;
+    private DialogBox _assistantUi;
     private CinemachineVirtualCamera[] _cctvCamsNE;
     private CinemachineVirtualCamera[] _cctvCamsNW;
     private CinemachineVirtualCamera[] _cctvCamsSE;
@@ -43,7 +43,7 @@ public class PlayerClass : MonoBehaviour
 
     private void Awake()
     {
-        _assistantUi = FindObjectOfType<UserInterface>();
+        _assistantUi = FindObjectOfType<DialogBox>();
         var charname = PlayerPrefs.GetString("Character", "");
         if (charname == "") SceneManager.LoadScene("Caretaker Select");
         _fpc = GetComponent<FirstPersonController>();
@@ -62,7 +62,7 @@ public class PlayerClass : MonoBehaviour
         if (charname == "Assistant")
         {
             SelectedClass = CaretakerClass.Assistant;
-            _cctvCamsNW = GameObject.Find("NorthWestCams").GetComponentsInChildren<CinemachineVirtualCamera>();
+            _cctvCamsNW = GameObject.Find("SouthWestCams").GetComponentsInChildren<CinemachineVirtualCamera>();
             _mainCam = FindObjectOfType<CameraSettings>().GetComponentInChildren<CinemachineVirtualCamera>();
         }
         else
@@ -149,7 +149,7 @@ public class PlayerClass : MonoBehaviour
     {
         var message = _assistantUi.Message;
         if (message.Length < 1) return;
-        if (message.ToLower().Contains("northwest"))
+        if (message.ToLower().Contains("southwest"))
         {
             _mainCam.Priority = 0;
             if (camIndex >= 0) _cctvCamsNW[camIndex].Priority = 0;

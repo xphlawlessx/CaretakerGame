@@ -2,7 +2,7 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="8" />
-    <option name="CUSTOM_SCOPE_NAME" value="Open Files" />
+    <option name="CUSTOM_SCOPE_NAME" value="Recently Changed Files" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -30,22 +30,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="Cleaned up FSM removed the implementation of &quot;Kid Class&quot; in favour of a simpler &quot;Leadership score&quot;">
+    <list default="true" id="475113fd-77ca-45ed-b6d6-ef3ee138be81" name="Default Changelist" comment="Removed all code i don't understand.&#10;This is the Entry Point for this new attempt">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CareTaker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Actors/Kid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/Kid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Actors/Kid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/Kid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rooms/Classroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rooms/Classroom.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UserInterface/DialogBox.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +66,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../_Godot/CareTaker_v2/StateMachine/EnemyWanderState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Reflection/MemberOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UserInterface/DialogBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Environment/BrokenProp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Product/LudiqProduct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Environment/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UserInterface/SegwayUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/FleeState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.2/Runtime/Behaviours/Cinemachine3rdPersonAim.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Dependencies/TinyJson/JsonParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StateMachine/DisabledState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,12 +89,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Actors/FaceCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.Peek/Editor/Tabs/Tabs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Editor/Inspection/Reflection/TypeInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ludiq/Ludiq.Peek/Editor/Context/GameObjectContextMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/StateMachine/PreWanderState.cs" />
         <option value="$PROJECT_DIR$/Assets/DestructableProp.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/GlobalAndMisc/LevelEnterExit.cs" />
@@ -128,24 +127,25 @@
         <option value="$PROJECT_DIR$/Assets/Environment/CameraSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/IKidClass.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface/UserInterface.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/KidGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/UserInterface/CharacterSelect.cs" />
         <option value="$PROJECT_DIR$/Assets/MinimapIndicator.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveLevelState.cs" />
         <option value="$PROJECT_DIR$/Assets/Actors/FirstPersonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" />
         <option value="$PROJECT_DIR$/Assets/_Actors/Kid.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/LeaveRoomState.cs" />
-        <option value="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" />
         <option value="$PROJECT_DIR$/Assets/Environment/DestructableProp.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/ToRoomState.cs" />
         <option value="$PROJECT_DIR$/Assets/Environment/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/EnemyFsm.cs" />
-        <option value="$PROJECT_DIR$/Assets/Environment/Door.cs" />
-        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/DestroyTargetState.cs" />
         <option value="$PROJECT_DIR$/Assets/StateMachine/ToPropState.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/DialogBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/UserInterface/UIBroadcastable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/RoomObjective.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/PlayerClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Actors/Kid.cs" />
       </list>
     </option>
   </component>
@@ -260,7 +260,8 @@
       <workItem from="1602584870192" duration="3764000" />
       <workItem from="1602598743074" duration="280000" />
       <workItem from="1619197707150" duration="4018000" />
-      <workItem from="1619268680351" duration="8574000" />
+      <workItem from="1619268680351" duration="9376000" />
+      <workItem from="1619522928765" duration="3868000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1601680681544</created>
@@ -297,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619201325045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Removed all code i don't understand.&#10;This is the Entry Point for this new attempt">
+      <created>1619280141873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619280141873</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +324,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="RollBack" />
                       </list>
                     </value>
                   </entry>
@@ -335,17 +343,17 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="RollBack" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="origin/main" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="RollBack" />
                 </option>
               </RecentGroup>
             </list>
@@ -360,17 +368,18 @@
     <MESSAGE value="Caretaker{&#10;re scaled player to better match scene&#10;player is now spawned at runtime.&#10;unified control scheme.&#10;can now turn lights off.&#10;Segway class - Sprinting causes ambient damage to surroundings.&#10;Detective class - Affects identification regen (good memory)&#10;Assistant class - bones of the CCTV system in  place, Bug with messages not firing, now messages contain a bit about what section of the level the room is in. &#10;}&#10;UI{&#10;added start camera with blend&#10;Minimap changed to render texture, minimap prefab created.&#10;fixed lots of scaling  bugs&#10;}&#10;Kids{&#10;kids can now switch groups if someone more charismatic is near.&#10;Leader will recruit nearby kids,&#10;Lonewolf will pick own objective / leave group&#10;}&#10;misc {&#10;removed incorrect lose condition.&#10;}" />
     <MESSAGE value="Reverted to the FSM enemy AI" />
     <MESSAGE value="Cleaned up FSM removed the implementation of &quot;Kid Class&quot; in favour of a simpler &quot;Leadership score&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up FSM removed the implementation of &quot;Kid Class&quot; in favour of a simpler &quot;Leadership score&quot;" />
+    <MESSAGE value="Removed all code i don't understand.&#10;This is the Entry Point for this new attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed all code i don't understand.&#10;This is the Entry Point for this new attempt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="27" key="#Notifications" timestamp="1619181348946">
+    <state x="275" y="27" key="#Notifications" timestamp="1619524267676">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="27" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1619181348946" />
-    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1619277673459">
+    <state x="275" y="27" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1619524267676" />
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1619523757238">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1619277673459" />
+    <state x="437" y="209" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1366.738@0.0.1366.738" timestamp="1619523757238" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1619175883601">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -387,18 +396,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="445" y="0" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1619274765252" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619201335829">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619280243714">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619201335829" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619280243714" />
     <state x="373" y="21" key="VcsDiffUtil.ChangesDialog" timestamp="1619177689473">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="373" y="21" key="VcsDiffUtil.ChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1619177689473" />
-    <state x="349" y="85" width="667" height="568" key="find.popup" timestamp="1619279867847">
+    <state x="349" y="85" width="667" height="568" key="find.popup" timestamp="1619523525417">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="349" y="85" width="667" height="568" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619279867847" />
+    <state x="349" y="85" width="667" height="568" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619523525417" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619198123852">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

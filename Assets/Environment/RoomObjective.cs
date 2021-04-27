@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DefaultNamespace;
 using UnityEngine;
+using UserInterface;
 using Random = UnityEngine.Random;
 
 namespace Environment

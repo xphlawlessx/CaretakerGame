@@ -1,28 +1,25 @@
 ﻿using System;
-using DefaultNamespace;
 using Environment;
 using StateMachine;
-using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using UserInterface;
 using Random = UnityEngine.Random;
 
 public class Kid : UIBroadcaster
 {
     private static readonly int IsWalk = Animator.StringToHash("IsWalk");
     private static readonly int Destroy1 = Animator.StringToHash("Destroy");
-    private readonly float _ambientDamageTMax = 1f;
-    private readonly float _hpMax = 10f;
+    private readonly float _notorietyMax = 10f;
     private readonly float _spawnTMax = 1f;
     private readonly float trackTMax = 30f;
 
-    private float _ambientDamageT;
     private Animator _anim;
-    private float _hp;
     private bool _isInLight;
-    private bool _isRegen;
+    private bool _isLosingNotoriety;
     private bool _isRunning;
     private NavMeshAgent _nav;
+    private float _notoriety;
     private Transform _player;
     private float _spawnT = 1f;
 
@@ -47,28 +44,23 @@ public class Kid : UIBroadcaster
         get => _isInLight;
         set
         {
-            _isRegen = !value;
+            _isLosingNotoriety = !value;
             _isInLight = value;
             if (value)
                 RunAway();
         }
     }
 
-    public int AmbientDamage { get; set; }
 
     private void Start()
     {
-        _hp = _hpMax;
         _spawnT = _spawnTMax;
         _player = FindObjectOfType<FirstPersonController>().transform;
         _nav = GetComponent<NavMeshAgent>();
         var lm = FindObjectOfType<LevelManager>();
         Fsm = new EnemyFsm(_nav, transform, this, _player, lm);
-        OnAmbientDamage += lm.AddDamageCashValue;
-        _ambientDamageT = _ambientDamageTMax;
         _anim = GetComponent<Animator>();
         justSpawn = true;
-        AmbientDamage = 1; //Todo TempValue Do Something better
         Setup();
         footPrints = GetComponentInChildren<LineRenderer>();
         Leadership = Random.Range(1, 6);
@@ -91,29 +83,21 @@ public class Kid : UIBroadcaster
                 return;
             }
 
-            _hp -= delta;
-            if (_hp <= 0)
+            _notoriety += delta;
+            if (_notoriety >= _notorietyMax)
             {
                 Broadcast("I knew that was you Jimmy!");
                 isIdentified = true;
-                // Fsm.ChangeState(Fsm.Victory);
+                Fsm.ChangeState(Fsm.LeaveLevel);
             }
         }
-        else if (_isRegen && _hp < _hpMax)
+        else if (_isLosingNotoriety && _notoriety > 0)
         {
-            _hp += playerHasGoodMemory ? delta * 0.5f : delta;
+            _notoriety -= playerHasGoodMemory ? delta * 0.5f : delta;
         }
 
-        _hp = Mathf.Clamp(_hp, 0, _hpMax);
-        if (_hp == _hpMax)
-        {
-            _ambientDamageT -= delta;
-            if (_ambientDamageT <= 0)
-            {
-                _ambientDamageT = _ambientDamageTMax;
-                OnAmbientDamage?.Invoke(AmbientDamage);
-            }
-        }
+        _notoriety = Mathf.Clamp(_notoriety, 0, _notorietyMax);
+    
 
         if (justSpawn)
         {
@@ -148,9 +132,7 @@ public class Kid : UIBroadcaster
         isVisibleOnMap = true;
         minimapIndicator.SetActive(true);
     }
-
-    private event Action<int> OnAmbientDamage;
-
+    
 
     public void AnimateOrNot()
     {

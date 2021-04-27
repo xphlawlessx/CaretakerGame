@@ -1,6 +1,6 @@
-﻿using DefaultNamespace;
-using Environment;
+﻿using Environment;
 using UnityEngine;
+using UserInterface;
 
 public class Door : UIBroadcaster
 {
@@ -22,9 +22,7 @@ public class Door : UIBroadcaster
             fsm.IsInRoom = !fsm.IsInRoom;
             if (fsm.IsInRoom)
                 if (fsm.State == fsm.ToRoom)
-                {
                     Broadcast($"Kid spotted entering {_room.name} in the {_room.area} ");
-                }
 
             if (fsm.State != fsm.Flee && fsm.State != fsm.LeaveLevel) fsm.EnterOrLeaveRoom(_room);
         }

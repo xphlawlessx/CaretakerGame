@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace UserInterface
 {
     public abstract class UIBroadcaster : MonoBehaviour
     {
@@ -9,8 +9,8 @@ namespace DefaultNamespace
 
         protected void Setup()
         {
-            var ui = FindObjectOfType<UserInterface>();
-            OnBroadcast += ui.AddMessageToQueue;
+            var dialogBox = FindObjectOfType<DialogBox>();
+            OnBroadcast += dialogBox.AddMessageToQueue;
         }
 
         protected void Broadcast(string message)

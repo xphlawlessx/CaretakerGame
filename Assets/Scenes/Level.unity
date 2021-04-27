@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78555510}
   m_Layer: 0
-  m_Name: NorthWestCams
+  m_Name: SouthWestCams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78555509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -138, y: 0, z: -152.1}
+  m_LocalPosition: {x: 7.9, y: 0, z: -152.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1913010389}
@@ -6152,7 +6152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913010388}
   m_LocalRotation: {x: -0.14484504, y: 0.8547243, z: -0.36642912, w: -0.33792913}
-  m_LocalPosition: {x: -1.1381836, y: 18.939034, z: 21.364883}
+  m_LocalPosition: {x: -23.17, y: 16.46, z: 21.364883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1112217987}
@@ -6219,7 +6219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023197135}
   m_LocalRotation: {x: -0.23760386, y: 0.6889864, z: -0.258174, w: -0.6341832}
-  m_LocalPosition: {x: -11.82814, y: 12.123074, z: 34.738678}
+  m_LocalPosition: {x: 2.8, y: 12.123074, z: 34.738678}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 629530665}

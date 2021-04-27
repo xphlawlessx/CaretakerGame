@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-public class UserInterface : MonoBehaviour
+public class DialogBox : MonoBehaviour
 {
     private readonly float _dialogueTMax = 4f;
     private readonly Queue<string> _messages = new Queue<string>();

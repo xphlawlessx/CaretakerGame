@@ -1339,11 +1339,11 @@
         </e>
         <e p="UserInterface" t="Include">
           <e p="CharacterSelect.cs" t="Include" />
+          <e p="DialogBox.cs" t="Include" />
           <e p="MinimapIndicator.cs" t="Include" />
           <e p="ScoreLevel.cs" t="Include" />
           <e p="SegwayUI.cs" t="Include" />
           <e p="UIBroadcastable.cs" t="Include" />
-          <e p="UserInterface.cs" t="Include" />
         </e>
       </e>
       <e p="CareTaker.sln" t="IncludeFlat" />
